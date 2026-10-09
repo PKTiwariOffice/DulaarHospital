@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #d9ecff;
+  --color-brand-200: #bcdcff;
+  --color-brand-300: #8ec6ff;
+  --color-brand-400: #59a5ff;
+  --color-brand-500: #3385fb;
+  --color-brand-600: #1b66f0;
+  --color-brand-700: #1450dd;
+  --color-brand-800: #1742b3;
+  --color-brand-900: #193c8d;
+  --color-brand-950: #142756;
+
+  --color-teal-50: #edfdfa;
+  --color-teal-100: #d1faf5;
+  --color-teal-200: #a7f4ec;
+  --color-teal-300: #6ce7dd;
+  --color-teal-400: #2fd2c8;
+  --color-teal-500: #10b7af;
+  --color-teal-600: #06958f;
+  --color-teal-700: #097773;
+  --color-teal-800: #0d5e5c;
+  --color-teal-900: #104e4d;
+
+  --color-sun-50: #fff8ed;
+  --color-sun-100: #ffefd4;
+  --color-sun-200: #ffdba8;
+  --color-sun-300: #ffc171;
+  --color-sun-400: #ff9d38;
+  --color-sun-500: #ff7f12;
+  --color-sun-600: #f06306;
+  --color-sun-700: #c74907;
+  --color-sun-800: #9e390e;
+  --color-sun-900: #7f310f;
+
+  --color-alert-50: #fff1f2;
+  --color-alert-100: #ffe1e4;
+  --color-alert-500: #e11d48;
+  --color-alert-600: #d10d38;
+  --color-alert-700: #ae0a2f;
+
+  --font-sans: "Segoe UI", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+
+  --shadow-soft: 0 10px 30px -12px rgb(20 66 179 / 0.18);
+  --shadow-card: 0 18px 40px -24px rgb(16 24 40 / 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-slate-700 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-slate-900 tracking-tight;
+  }
+
+  ::selection {
+    background-color: theme(--color-brand-600);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 3px solid theme(--color-brand-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn,
+  .btn-primary,
+  .btn-emergency,
+  .btn-ghost,
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline-offset-4 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white shadow-[0_10px_25px_-10px_rgba(27,102,240,0.9)] hover:bg-brand-700 active:scale-[0.98];
+  }
+
+  .btn-emergency {
+    @apply bg-alert-500 text-white shadow-[0_10px_25px_-10px_rgba(225,29,72,0.9)] hover:bg-alert-600 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply border border-white/40 bg-white/10 text-white backdrop-blur hover:bg-white/20;
+  }
+
+  .btn-outline {
+    @apply border border-brand-200 bg-white text-brand-700 hover:border-brand-400 hover:bg-brand-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-100 bg-white shadow-card;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-100 bg-brand-50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-brand-700;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-semibold text-slate-700;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .field-error {
+    @apply mt-1.5 block text-xs font-medium text-alert-600;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 20% 20%, rgb(51 133 251 / 0.25) 0, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgb(16 183 175 / 0.28) 0, transparent 40%),
+    radial-gradient(circle at 75% 85%, rgb(255 157 56 / 0.22) 0, transparent 45%);
+}
+
+.dots-grid {
+  background-image: radial-gradient(rgb(255 255 255 / 0.18) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
