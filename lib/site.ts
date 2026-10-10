@@ -13,7 +13,7 @@ export const SITE = {
   // international format (country code + number, no symbols or spaces).
   whatsapp: "917552446809",
   whatsappMessage: "Hello Dulaar Hospital, I would like to book an appointment.",
-  email: "care@dulaarhospital.com",
+  email: "dulaarhospital@outlook.com",
   addressLine1: "A-11, Surendra Garden, Bagsewaniya",
   addressLine2: "Near Police Station (Bagsewaniya Thana), Hoshangabad Road",
   city: "Bhopal",

@@ -1,6 +1,7 @@
 "use client";
 
 import { IndianRupee, Sparkles, Stethoscope, Users } from "lucide-react";
+import Image from "next/image";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { STATS } from "@/lib/site";
@@ -81,6 +82,23 @@ export default function About() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
+            <Reveal className="sm:col-span-2">
+              <figure className="relative overflow-hidden rounded-3xl border border-slate-100 shadow-soft">
+                <div className="relative aspect-[16/9]">
+                  <Image
+                    src="/images/hospital-reception.jpg"
+                    alt="Reception and waiting area at Dulaar Hospital, Bagsewaniya, Bhopal"
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 92vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 via-slate-950/45 to-transparent p-4 text-xs font-semibold text-white sm:text-sm">
+                  Our reception &amp; waiting area - welcoming families 24x7
+                </figcaption>
+              </figure>
+            </Reveal>
+
             {HIGHLIGHTS.map((item, i) => (
               <Reveal
                 key={item.title}

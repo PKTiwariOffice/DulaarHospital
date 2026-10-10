@@ -1,13 +1,24 @@
-import { HeartPulse } from "lucide-react";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 
-export default function Logo({ light = false }: { light?: boolean }) {
+export default function Logo({
+  light = false,
+  priority = false,
+}: {
+  light?: boolean;
+  priority?: boolean;
+}) {
   return (
     <a href="#home" className="group flex items-center gap-3" aria-label={`${SITE.shortName} - Home`}>
-      <span className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-teal-600 shadow-soft transition-transform duration-300 group-hover:-rotate-6">
-        <HeartPulse className="h-6 w-6 text-white" strokeWidth={2.2} aria-hidden="true" />
-        <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-white bg-sun-400" />
-      </span>
+      <Image
+        src={light ? "/images/logo-mark-white.png" : "/images/logo-mark.png"}
+        alt=""
+        aria-hidden="true"
+        width={170}
+        height={171}
+        priority={priority}
+        className="h-11 w-11 shrink-0 object-contain transition-transform duration-300 group-hover:-rotate-6"
+      />
       <span className="leading-tight">
         <span
           className={`block text-lg font-extrabold tracking-tight ${

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Baby,
   CalendarCheck,
   Clock4,
   HeartPulse,
@@ -12,6 +11,7 @@ import {
   Sparkles,
   Star,
 } from "lucide-react";
+import Image from "next/image";
 import Reveal from "./Reveal";
 import { SITE } from "@/lib/site";
 
@@ -120,8 +120,14 @@ export default function Hero() {
               </div>
 
               <div className="relative mt-8 flex justify-center">
-                <div className="flex h-36 w-36 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-teal-500 shadow-[0_20px_45px_-20px_rgba(16,183,175,0.9)] sm:h-44 sm:w-44">
-                  <Baby className="h-16 w-16 text-white sm:h-20 sm:w-20" strokeWidth={1.5} />
+                <div className="relative h-36 w-36 overflow-hidden rounded-full border-4 border-white/30 shadow-[0_20px_45px_-20px_rgba(16,183,175,0.9)] sm:h-44 sm:w-44">
+                  <Image
+                    src="/images/hospital-building.jpg"
+                    alt="Dulaar Hospital building on Hoshangabad Road, Bhopal"
+                    fill
+                    sizes="(max-width: 640px) 144px, 176px"
+                    className="object-cover"
+                  />
                 </div>
               </div>
 

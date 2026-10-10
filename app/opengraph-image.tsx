@@ -1,5 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
+
+export const runtime = "nodejs";
 
 export const alt = "Dulaar Hospital - Pediatric & Maternity Care";
 export const size = { width: 1200, height: 630 };
@@ -12,7 +17,10 @@ const SPECIALTIES = [
   "General Medicine & Surgery",
 ];
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const logo = await readFile(join(process.cwd(), "public", "images", "logo-white.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -55,38 +63,31 @@ export default function OpengraphImage() {
           }}
         />
 
-        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-          <div
+        <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+          <img
+            src={logoSrc}
+            width="170"
+            height="101"
+            alt=""
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "80px",
-              height: "80px",
-              borderRadius: "22px",
-              background: "linear-gradient(135deg, #3385fb, #06958f)",
-              boxShadow: "0 18px 40px -18px rgba(0,0,0,0.6)",
+              width: "170px",
+              height: "101px",
+              objectFit: "contain",
             }}
-          >
-            <svg width="46" height="46" viewBox="0 0 24 24" fill="#ffffff">
-              <path d="M12 21s-7-4.35-9.5-8.5C.9 9.7 2.3 6 5.7 6c1.9 0 3.3 1 4.3 2.4C11 7 12.4 6 14.3 6c3.4 0 4.8 3.7 3.2 6.5C19 16.65 12 21 12 21z" />
-            </svg>
-          </div>
+          />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ display: "flex", fontSize: "40px", fontWeight: 800, letterSpacing: "-0.5px" }}>
-              Dulaar Hospital
-            </div>
             <div
               style={{
                 display: "flex",
-                fontSize: "20px",
+                fontSize: "22px",
                 fontWeight: 700,
-                letterSpacing: "4px",
+                letterSpacing: "5px",
                 color: "#8ec6ff",
                 textTransform: "uppercase",
               }}
             >
-              Pediatric &amp; Maternity Care
+              Pediatric &amp; Maternity Care - Bhopal
             </div>
           </div>
         </div>

@@ -71,7 +71,7 @@ export default function Header() {
         }`}
       >
         <div className="container-px flex h-16 items-center justify-between gap-4 sm:h-[68px]">
-          <Logo />
+          <Logo priority />
 
           <ul className="hidden items-center gap-1 lg:flex">
             {NAV_LINKS.map((link) => {
