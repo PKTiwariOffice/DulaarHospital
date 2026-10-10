@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Medical Disclaimer",
   description:
-    "Important medical disclaimer for the Dulaar Hospital & Children Clinic website. Online appointments are for OPD consultations only - emergencies require a direct call or visit.",
+    "Important medical disclaimer for the Dulaar Hospital website. Online appointments are for OPD consultations only - emergencies require a direct call or visit.",
   alternates: { canonical: "/disclaimer" },
 };
 

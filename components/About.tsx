@@ -46,15 +46,16 @@ export default function About() {
             <Reveal delay={0.1}>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600 sm:text-lg">
                 <p>
-                  {`Dulaar Hospital & Children Clinic`} is a trusted multi-specialty hospital on
-                  Hoshangabad Road, Bhopal, built around a simple belief - healthcare should feel
-                  safe, honest and welcoming. From the front desk to the NICU, every corner is
-                  designed to keep patients calm and families informed.
+                  {`Dulaar Hospital`} is a specialized children&apos;s hospital with complete
+                  maternity &amp; women&apos;s healthcare on Hoshangabad Road, Bhopal, built around
+                  a simple belief - healthcare should feel safe, honest and welcoming. From the
+                  front desk to the NICU, every corner is designed to keep patients calm and
+                  families informed.
                 </p>
                 <p>
-                  We combine comprehensive pediatric and newborn care with general medicine,
-                  general surgery and obstetrics &amp; gynecology, so that one reliable hospital can
-                  look after your entire family - from a newborn&apos;s first check-up to a
+                  We combine comprehensive pediatric and newborn care with obstetrics &amp;
+                  gynecology, general medicine and general surgery, so that one reliable hospital
+                  can look after your entire family - from a newborn&apos;s first check-up to a
                   grandparent&apos;s routine consultation.
                 </p>
               </div>

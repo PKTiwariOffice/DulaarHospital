@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   keywords: [
     "Dulaar Hospital Bhopal",
-    "Dulaar Children Hospital",
+    "Dulaar Children's Hospital",
     "child hospital Hoshangabad Road",
     "pediatrician Bagsewaniya Bhopal",
     "NICU Bhopal",

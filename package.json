@@ -2,7 +2,7 @@
   "name": "dulaar-hospital",
   "version": "1.0.0",
   "private": true,
-  "description": "Dulaar Hospital & Children Clinic - Bhopal | Pediatrics, General Medicine, Surgery & Gynecology",
+  "description": "Dulaar Hospital - Pediatric & Maternity Care | Bhopal",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

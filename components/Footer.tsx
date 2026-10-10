@@ -139,7 +139,7 @@ export default function Footer() {
             </nav>
           </div>
           <p className="text-slate-600">
-            Pediatrician in Bhopal | Child Hospital on Hoshangabad Road | Emergency 24x7
+            Pediatrician in Bhopal | Children&apos;s Hospital &amp; Maternity Care | Emergency 24x7
           </p>
         </div>
       </div>

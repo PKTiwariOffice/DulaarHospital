@@ -6,7 +6,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Dulaar Hospital & Children Clinic collects, uses and protects your personal and health information.",
+    "How Dulaar Hospital collects, uses and protects your personal and health information.",
   alternates: { canonical: "/privacy" },
 };
 

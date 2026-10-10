@@ -1,7 +1,7 @@
-# Dulaar Hospital & Children Clinic — Website
+# Dulaar Hospital — Website
 
-A fast, SEO-friendly marketing website for **Dulaar Hospital & Children Clinic**, a 24x7
-pediatric and multi-specialty hospital in Bagsewaniya, Hoshangabad Road, Bhopal. The site
+A fast, SEO-friendly marketing website for **Dulaar Hospital**, a specialized 24x7 children's
+hospital with complete maternity & women's healthcare in Bagsewaniya, Hoshangabad Road, Bhopal. The site
 showcases services, doctors, facilities and testimonials, and lets visitors request OPD
 appointments online.
 
@@ -145,4 +145,4 @@ npm run start   # serves on port 3000 by default
 
 ## License
 
-© Dulaar Hospital & Children Clinic. All rights reserved. Content is proprietary.
+© Dulaar Hospital. All rights reserved. Content is proprietary.

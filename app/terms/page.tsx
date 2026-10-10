@@ -6,7 +6,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms and conditions governing your use of the Dulaar Hospital & Children Clinic website.",
+    "The terms and conditions governing your use of the Dulaar Hospital website.",
   alternates: { canonical: "/terms" },
 };
 
