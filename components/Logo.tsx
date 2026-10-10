@@ -21,7 +21,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
             light ? "text-brand-200" : "text-teal-600"
           }`}
         >
-          Children Clinic
+          Children&apos;s Hospital &amp; Maternity Care
         </span>
       </span>
     </a>

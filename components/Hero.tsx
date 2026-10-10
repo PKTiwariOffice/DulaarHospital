@@ -34,7 +34,7 @@ export default function Hero() {
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-white backdrop-blur sm:text-sm">
                 <Sparkles className="h-4 w-4 text-sun-300" aria-hidden="true" />
-                Bhopal&apos;s Trusted Children&apos;s Hospital
+                Specialized Children&apos;s Hospital &amp; Maternity Care
               </span>
             </Reveal>
 
@@ -63,9 +63,11 @@ export default function Hero() {
 
             <Reveal delay={0.16}>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-100 sm:text-lg">
-                {SITE.shortName} brings together compassionate pediatric care, a well-maintained
-                NICU and experienced specialists - Dr. Akhil Singh and Dr. Varun Rai - in a clean,
-                child-friendly environment that families across Bhopal rely on, day and night.
+                {SITE.shortName} is a specialized children&apos;s hospital offering compassionate
+                pediatric care, a well-maintained NICU, and complete maternity &amp; women&apos;s
+                healthcare - led by experienced specialists Dr. Akhil Singh and Dr. Varun Rai - in
+                a clean, child-friendly environment that families across Bhopal rely on, day and
+                night.
               </p>
             </Reveal>
 

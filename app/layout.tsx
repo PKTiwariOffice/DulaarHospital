@@ -5,8 +5,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default:
-      "Dulaar Hospital & Children Clinic - Child Hospital & Pediatrician in Bhopal | 24x7",
+    default: "Dulaar Hospital - Pediatric & Maternity Care",
     template: "%s | Dulaar Hospital, Bhopal",
   },
   description: SITE.description,
@@ -38,13 +37,12 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: SITE.url,
     siteName: SITE.name,
-    title:
-      "Dulaar Hospital & Children Clinic - Trusted Pediatric & Multi-Specialty Care in Bhopal",
+    title: "Dulaar Hospital - Pediatric & Maternity Care",
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dulaar Hospital & Children Clinic - Bhopal",
+    title: "Dulaar Hospital - Pediatric & Maternity Care",
     description: SITE.description,
   },
 };

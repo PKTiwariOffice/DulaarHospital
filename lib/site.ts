@@ -1,10 +1,11 @@
 export const SITE = {
-  name: "Dulaar Hospital & Children Clinic",
+  name: "Dulaar Hospital",
   shortName: "Dulaar Hospital",
-  alternateName: "Dulaar Children Hospital",
-  tagline: "Trusted Pediatric & Multi-Specialty Healthcare in Bhopal",
+  alternateName: "Dulaar Children's Hospital",
+  tagline:
+    "Specialized Children's Hospital with Complete Maternity & Women's Healthcare in Bhopal",
   description:
-    "Dulaar Hospital & Children Clinic, Bhopal offers 24x7 pediatric and newborn care (NICU), general medicine, general surgery and obstetrics & gynecology with experienced specialists Dr. Akhil Singh and Dr. Varun Rai.",
+    "Dulaar Hospital, Bhopal is a specialized children's hospital offering 24x7 pediatric and newborn care (NICU), along with complete maternity and women's healthcare (obstetrics & gynecology), general medicine and general surgery - led by experienced specialists Dr. Akhil Singh and Dr. Varun Rai.",
   url: "https://www.dulaarhospital.com",
   phone: "0755-2446809",
   phoneHref: "tel:+917552446809",

@@ -1,8 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
-export const alt =
-  "Dulaar Hospital & Children Clinic - Trusted Pediatric & Multi-Specialty Care in Bhopal";
+export const alt = "Dulaar Hospital - Pediatric & Maternity Care";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -87,7 +86,7 @@ export default function OpengraphImage() {
                 textTransform: "uppercase",
               }}
             >
-              Children Clinic
+              Pediatric &amp; Maternity Care
             </div>
           </div>
         </div>
@@ -106,7 +105,8 @@ export default function OpengraphImage() {
             Trusted Pediatric &amp; Multi-Specialty Care in Bhopal
           </div>
           <div style={{ display: "flex", fontSize: "26px", color: "#d9ecff", maxWidth: "820px" }}>
-            Compassionate child care, a well-equipped NICU and 24x7 emergency support.
+            Compassionate child care, complete maternity &amp; women&apos;s healthcare, a
+            well-equipped NICU and 24x7 emergency support.
           </div>
         </div>
 
